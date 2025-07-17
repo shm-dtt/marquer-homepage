@@ -2,101 +2,52 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-100 via-white to-gray-200 p-6 pt-16">
+      <header className="flex flex-col items-center gap-6 mb-16">
+        <div className="flex items-center gap-4 mb-2">
+          <Image src="/marquer.svg" alt="Marquer Logo" width={56} height={56} />
+          <span className="text-4xl font-bold text-[#3769FF]">Marquer</span>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+        <h1 className="text-4xl sm:text-5xl font-medium text-gray-900 text-center drop-shadow-lg mb-2">
+          Share Your Web, Instantly.
+        </h1>
+        <p className="text-lg sm:text-xl text-gray-600 text-center max-w-2xl mt-2 mb-2">
+          An extension/add-on that makes it easy to share your bookmark
+          collections with friends, colleagues, or across devices.
+        </p>
+      </header>
+      <div className="flex flex-col sm:flex-row gap-6 mb-20 w-full max-w-md justify-center items-center">
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://chromewebstore.google.com/detail/marquer-bookmark-sharer/nnjafiphfgecelkgfiedpbemffhcbmjn"
           target="_blank"
           rel="noopener noreferrer"
+          className="flex items-center justify-center sm:justify-start gap-3 px-6 py-3 rounded-full bg-[var(--color-blue)] text-white font-semibold text-base shadow hover:bg-[#2850b8] transition-colors border-2 border-[var(--color-blue)] hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-200 w-full sm:w-auto max-w-xs mx-auto"
         >
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="https://fonts.gstatic.com/s/i/productlogos/chrome_store/v7/192px.svg"
+            alt="Chrome Web Store"
+            width={28}
+            height={28}
           />
-          Learn
+          <span>Get for Chrome</span>
         </a>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://addons.mozilla.org/en-US/firefox/addon/marquer/"
           target="_blank"
           rel="noopener noreferrer"
+          className="flex items-center justify-center sm:justify-start gap-3 px-6 py-3 rounded-full bg-[var(--color-yellow)] text-white font-semibold text-base shadow hover:bg-[#cc9600] transition-colors border-2 border-[var(--color-yellow)] hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-200 w-full sm:w-auto max-w-xs mx-auto"
         >
           <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg"
+            alt="Firefox Add-ons"
+            width={28}
+            height={28}
           />
-          Examples
+          <span>Get for Firefox</span>
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </div>
+      <footer className="text-gray-400 text-sm mt-auto mb-2 text-center">
+        &copy; {new Date().getFullYear()} Marquer. All rights reserved.
       </footer>
     </div>
   );
