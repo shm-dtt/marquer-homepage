@@ -2,14 +2,13 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-100 via-white to-gray-200 pt-20">
+    <section className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-100 via-white to-gray-200 pt-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <header className="flex flex-col items-center gap-6 mb-16">
           <div className="flex items-center gap-4 mb-2">
             <Image src="/favicon.ico" alt="Marquer Logo" width={56} height={56} />
-            <span className="text-4xl font-bold text-[#3769FF]">Marquer</span>
           </div>
-          <h1 className="text-6xl sm:text-5xl font-medium text-gray-900 text-center drop-shadow-lg mb-2">
+          <h1 className="lg:text-6xl text-4xl font-medium text-gray-900 text-center drop-shadow-lg mb-2">
             Share Your Web, Instantly.
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 text-center max-w-2xl mt-2 mb-2">
@@ -18,7 +17,7 @@ export default function HeroSection() {
           </p>
         </header>
         
-        <div className="flex flex-col sm:flex-row gap-6 mb-20 w-full max-w-md justify-center items-center mx-auto">
+        <div className="flex flex-col sm:flex-row gap-6 mb-12 w-full max-w-md justify-center items-center mx-auto">
           <a
             href="https://chromewebstore.google.com/detail/marquer-bookmark-sharer/nnjafiphfgecelkgfiedpbemffhcbmjn"
             target="_blank"
@@ -51,7 +50,7 @@ export default function HeroSection() {
         
         <div className="text-center">
           <p className="text-gray-500 text-sm mb-4">
-            Trusted by thousands of users worldwide
+            Trusted by thousands of users worldwide (soon? lol)
           </p>
           <div className="flex justify-center items-center space-x-8 text-gray-400">
             <div className="flex items-center space-x-2">
