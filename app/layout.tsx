@@ -8,10 +8,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Marquer",
+  title: "Marquer - Share your web",
   description: "Share your web, instantly.",
   icons: {
-    icon: "/marquer.svg",
+    icon: "/favicon.ico",
   },
 };
 
