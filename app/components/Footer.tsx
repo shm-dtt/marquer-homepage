@@ -5,14 +5,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Brand */}
           <div className="text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
-              <div className="w-8 h-8 bg-[#3769FF] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">M</span>
-              </div>
-              <span className="text-xl font-bold">Marquer</span>
-            </div>
             <p className="text-gray-400 text-sm">
-              Share your web, instantly. The modern way to organize and share your bookmarks.
+              Share your web, instantly. The modern way to share your bookmarks.
             </p>
           </div>
           

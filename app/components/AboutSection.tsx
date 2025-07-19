@@ -7,8 +7,8 @@ export default function AboutSection() {
             About Marquer
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Marquer is a powerful browser extension designed to revolutionize how you share and organize your bookmarks. 
-            Built for modern web users who need seamless bookmark management across devices and teams.
+            Marquer is a powerful browser extension designed to revolutionize how you share your bookmarks. 
+            Built for modern web users who need seamless bookmark management across devices, teams, and people.
           </p>
         </div>
         
