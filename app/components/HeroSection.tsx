@@ -13,7 +13,7 @@ export default function HeroSection() {
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 text-center max-w-2xl mt-2 mb-2">
             Marquer is an extension/add-on that makes it easy to share your bookmark
-            collections with friends, colleagues, or across devices.
+            collections with friends, colleagues.
           </p>
         </header>
         
@@ -22,7 +22,7 @@ export default function HeroSection() {
             href="https://chromewebstore.google.com/detail/marquer-bookmark-sharer/nnjafiphfgecelkgfiedpbemffhcbmjn"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center sm:justify-start gap-3 px-6 py-3 rounded-full bg-[var(--color-blue)] text-white font-semibold text-base shadow-lg hover:bg-[var(--color-blue)] transition-all duration-200 border-2 border-[var(--color-blue)] hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-200 w-full sm:w-auto max-w-xs mx-auto transform hover:shadow-xl"
+            className="flex items-center justify-center sm:justify-start gap-3 px-6 py-3 rounded-full bg-[var(--color-blue)] text-white font-semibold text-base shadow-lg hover:bg-[var(--color-blue)] transition-all duration-200 border-2 border-[var(--color-blue)] hover:scale-105 w-full sm:w-auto max-w-xs mx-auto transform hover:shadow-xl"
           >
             <Image
               src="https://fonts.gstatic.com/s/i/productlogos/chrome_store/v7/192px.svg"
@@ -36,7 +36,7 @@ export default function HeroSection() {
             href="https://addons.mozilla.org/en-US/firefox/addon/marquer/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center sm:justify-start gap-3 px-6 py-3 rounded-full bg-[var(--color-yellow)] text-white font-semibold text-base shadow-lg hover:bg-[var(--color-yellow)] transition-all duration-200 border-2 border-[var(--color-yellow)] hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-200 w-full sm:w-auto max-w-xs mx-auto transform hover:shadow-xl"
+            className="flex items-center justify-center sm:justify-start gap-3 px-6 py-3 rounded-full bg-[var(--color-yellow)] text-white font-semibold text-base shadow-lg hover:bg-[var(--color-yellow)] transition-all duration-200 border-2 border-[var(--color-yellow)] hover:scale-105 w-full sm:w-auto max-w-xs mx-auto transform hover:shadow-xl"
           >
             <Image
               src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Firefox_logo%2C_2019.svg"
@@ -50,7 +50,7 @@ export default function HeroSection() {
         
         <div className="text-center">
           <p className="text-gray-500 text-sm mb-4">
-            Trusted by thousands of users worldwide (soon? lol)
+            Trusted by thousands(soon? lol) of users worldwide
           </p>
           <div className="flex justify-center items-center space-x-8 text-gray-400">
             <div className="flex items-center space-x-2">

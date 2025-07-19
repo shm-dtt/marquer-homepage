@@ -3,11 +3,38 @@ export default function FeaturesSection() {
     {
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+      ),
+      title: "Export Any Folder",
+      description: "Export entire bookmark folders, subfolders, or whole bookmark tabs as JSON files. Perfect for sharing curated collections."
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+        </svg>
+      ),
+      title: "Import Bookmarks",
+      description: "Import JSON files from others and instantly add their bookmarks to your browser. No manual copying needed."
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z" />
         </svg>
       ),
-      title: "Smart Collections",
-      description: "Organize your bookmarks into intelligent collections that automatically categorize and tag your links."
+      title: "Easy Sharing",
+      description: "Share your bookmark collections with friends, colleagues, or across your own devices. Simple JSON file transfer."
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: "Cross-Browser Support",
+      description: "Works on all Chromium browsers (Chrome, Edge, Brave) and Firefox. One extension for all your browsers."
     },
     {
       icon: (
@@ -15,35 +42,8 @@ export default function FeaturesSection() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
         </svg>
       ),
-      title: "Secure Sharing",
-      description: "Share your collections with password protection and expiration dates for maximum security."
-    },
-    {
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-        </svg>
-      ),
-      title: "Cross-Device Sync",
-      description: "Access your bookmarks anywhere. Your collections sync automatically across all your devices."
-    },
-    {
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-      ),
-      title: "Team Collaboration",
-      description: "Create shared collections with your team. Perfect for research, resources, and knowledge sharing."
-    },
-    {
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-        </svg>
-      ),
-      title: "Analytics & Insights",
-      description: "Track which links are most popular and get insights into your browsing patterns."
+      title: "Secure & Private",
+      description: "Your bookmarks stay private. Export only what you want to share. No cloud storage, just direct file sharing."
     },
     {
       icon: (
@@ -52,7 +52,7 @@ export default function FeaturesSection() {
         </svg>
       ),
       title: "Lightning Fast",
-      description: "Optimized for speed. Share collections instantly with one-click sharing and instant loading."
+      description: "Export and import bookmarks instantly. No waiting, no complex setup. Just click and share."
     }
   ];
 
@@ -64,8 +64,8 @@ export default function FeaturesSection() {
             Powerful Features
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Everything you need to organize, share, and collaborate on your bookmarks. 
-            Built for modern teams and individuals who demand efficiency.
+            Everything you need to export, import, and share your bookmarks. 
+            Simple JSON-based sharing that works across all major browsers.
           </p>
         </div>
         
@@ -86,35 +86,7 @@ export default function FeaturesSection() {
             </div>
           ))}
         </div>
-        
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-[#3769FF] to-[#FFB700] p-8 rounded-2xl text-white">
-            <h3 className="text-2xl font-bold mb-4">
-              Ready to get started?
-            </h3>
-            <p className="text-lg mb-6 opacity-90">
-              Join thousands of users who are already organizing their web with Marquer.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://chromewebstore.google.com/detail/marquer-bookmark-sharer/nnjafiphfgecelkgfiedpbemffhcbmjn"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white text-[#3769FF] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Get for Chrome
-              </a>
-              <a
-                href="https://addons.mozilla.org/en-US/firefox/addon/marquer/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white text-[#FFB700] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Get for Firefox
-              </a>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );

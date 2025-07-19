@@ -1,4 +1,37 @@
 export default function AboutSection() {
+  const features = [
+    {
+      icon: (
+        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+        </svg>
+      ),
+      title: "Export Bookmarks",
+      description: "Export any folder, subfolder, or bookmark tab as a JSON file. Perfect for sharing your curated collections with others.",
+      bgColor: "bg-[#3769FF]"
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
+        </svg>
+      ),
+      title: "Import & Share",
+      description: "Import JSON files from others and instantly add their bookmarks to your browser. Share knowledge effortlessly.",
+      bgColor: "bg-[#FFB700]"
+    },
+    {
+      icon: (
+        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: "Cross-Browser Support",
+      description: "Works seamlessly across all Chromium browsers (Chrome, Edge, Brave) and Firefox. One extension, all browsers.",
+      bgColor: "bg-green-500"
+    }
+  ];
+
   return (
     <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -7,76 +40,27 @@ export default function AboutSection() {
             About Marquer
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Marquer is a powerful browser extension designed to revolutionize how you share your bookmarks. 
-            Built for modern web users who need seamless bookmark management across devices, teams, and people.
+            Marquer is a powerful browser extension that makes bookmark sharing simple and efficient. 
+            Export your bookmarks as JSON files and share them with others who can import them directly into their browser.
           </p>
         </div>
-        
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#3769FF] rounded-lg flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+              <div className={`w-16 h-16 ${feature.bgColor} rounded-xl flex items-center justify-center mb-6`}>
+                {feature.icon}
               </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Lightning Fast</h3>
-                <p className="text-gray-600">Share your bookmark collections instantly with just a few clicks. No more copying and pasting URLs.</p>
-              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                {feature.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {feature.description}
+              </p>
             </div>
-            
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-[#FFB700] rounded-lg flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Secure & Private</h3>
-                <p className="text-gray-600">Your bookmarks stay private. Share only what you want, when you want.</p>
-              </div>
-            </div>
-            
-            <div className="flex items-start space-x-4">
-              <div className="flex-shrink-0 w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">Team Collaboration</h3>
-                <p className="text-gray-600">Perfect for teams and colleagues. Share curated collections of resources and tools.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-[#3769FF] rounded-full"></div>
-                <span className="text-gray-700 font-medium">Cross-platform compatibility</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-[#FFB700] rounded-full"></div>
-                <span className="text-gray-700 font-medium">One-click sharing</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">Custom collections</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">Real-time sync</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">Privacy focused</span>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
   );
-} 
+}
