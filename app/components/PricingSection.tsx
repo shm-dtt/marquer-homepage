@@ -82,8 +82,7 @@ export default function PricingSection() {
                 </ul>
 
                 <a
-                  href={plan.href}
-                  target="_blank"
+                  href="#"
                   rel="noopener noreferrer"
                   className="block w-full text-center py-3 px-6 rounded-lg font-semibold transition-colors bg-[#3769FF] text-white hover:bg-[#2d5ae8]"
                 >
